@@ -1,0 +1,8 @@
+a = float(input ('Informe o parâmetro a da equação:'))
+b = float(input ('Informe o parâmetro b da equação:'))
+c = float(input ('Informe o parâmetro c da equação:'))
+delta = (b**2) - (4*a*c)
+raiz1 = (-b + delta**0.5)/(2*a)
+raiz2 = (-b - delta**0.5)/(2*a)
+print('O valor da primeira raiz é',raiz1)
+print('O valor da primeira raiz é',raiz2)
