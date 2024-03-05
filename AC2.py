@@ -15,6 +15,8 @@ def equacao_de_seguno_grau(a,b,c):
     raiz2 = (-b - (d)**0.5) / 2*a
 
     return (raiz1, raiz2)
+
+#a função print foi escrita apenaas com o intouito de teste
 print(equacao_de_seguno_grau(1, -6, 8))
 
 """
@@ -24,7 +26,7 @@ def bissexto(ano):
    #isto anlisará se o ano é divisível por 100, 400 e 4 ou 100 e 4  
    return ano % 100 == 0 and ano % 400 == 0 and ano % 4 == 0 or ano % 4 == 0 and ano % 100 != 0
 
-
+#a função print foi escrita apenaas com o intouito de teste
 print(bissexto(95))
 
 """
@@ -39,5 +41,5 @@ def calcula_salario(valor_hora, num_de_horas):
     irfp = 0.275
     return (round(valor_hora * num_de_horas)*irfp)
 
-
+#a função print foi escrita apenaas com o intouito de teste
 print(calcula_salario(1000, 5))
