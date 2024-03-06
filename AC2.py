@@ -24,7 +24,7 @@ print(equacao_de_seguno_grau(1, -6, 8))
 def bissexto(ano):
   
    #isto anlisará se o ano é divisível por 100, 400 e 4 ou 100 e 4  
-   return ano % 100 == 0 and ano % 400 == 0 and ano % 4 == 0 or ano % 4 == 0 and ano % 100 != 0
+   return (((ano % 100 == 0 and ano % 400 == 0) and ano % 4 == 0) or (ano % 4 == 0 and ano % 100 != 0))
 
 #a função print foi escrita apenaas com o intouito de teste
 print(bissexto(95))
