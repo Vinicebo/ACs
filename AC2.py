@@ -10,9 +10,9 @@ def equacao_de_seguno_grau(a,b,c):
     d = (b**2) - (4*a*c)
         
     #deepois as duas soluuções
-    raiz1 = (-b + (d)**0.5) / 2*a
+    raiz1 = (-b + (d)**0.5) / (2*a)
 
-    raiz2 = (-b - (d)**0.5) / 2*a
+    raiz2 = (-b - (d)**0.5) / (2*a)
 
     return (raiz1, raiz2)
 
