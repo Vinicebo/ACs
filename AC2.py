@@ -36,10 +36,17 @@ valor_hora e num_horas, que correspondem ao valor do salário por hora e o núme
 Além disso, a função tem um parâmetro-chave irpf, que calcula o imposto de renda a ser deduzido, cujo valor padrão é 0.275. 
 A função retorna o salário líquido de um funcionário, calculado como o produto do valor por hora pelo número de horas, reduzido o percentual do imposto de renda dado
 """
-def calcula_salario(valor_hora, num_de_horas):
-    #valor do imposto fixo
-    irfp = 0.275
-    return (round(valor_hora * num_de_horas)*irfp)
-
-#a função print foi escrita apenaas com o intouito de teste
-print(calcula_salario(1000, 5))
+def calcula_salario(value_hour: float, num_hours: float, irpf: float = 0.275) -> float:
+    """
+    Calcula o salário líquido de um funcionário, considerando o valor por hora, o número de horas trabalhadas no mês e a alíquota do IRPF.
+    
+    Parâmetros:
+    value_hour (float): Valor por hora trabalhada.
+    num_hours (float): Número de horas trabalhadas no mês.
+    irpf (float): Alíquota do Imposto de Renda de Pessoa Física (IRPF). Padrão: 0.275.
+    
+    Retorna:
+    float: Salário líquido do funcionário.
+    """
+    salario_bruto = value_hour * num_hours
+    salario_liquido = salario_bruto * (1 - irpf)
