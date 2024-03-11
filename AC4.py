@@ -71,4 +71,3 @@ def main():
 
 
 
-print(notas_sao_validas(11, 2, 6, 7))
