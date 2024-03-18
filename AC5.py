@@ -21,8 +21,9 @@ def main():
         dano_aventureiro = random.randint(1, ataque_aventureiro)
         vida_monstro = vida_monstro - dano_aventureiro
 #calculo de dano do monstro
-        dano_monstro = random.randint(1, ataque_monstro)
-        vida_aventureiro = vida_aventureiro - (dano_monstro - defesa_aventureiro)
+        dano_monstro = random.randint(1, ataque_monstro) - defesa_aventureiro
+        if dano_monstro >= 0:
+            vida_aventureiro = (vida_aventureiro - dano_monstro)
 
 #monstro morre
         if vida_monstro <= 0:
