@@ -126,10 +126,6 @@ for _ in range(N):
 
 """
 Número 7-
-
-"""
-"""
-Número 7-
 Cara ou cora
 """
 N = int(input())
@@ -142,4 +138,20 @@ while N != 0:
     print("Mary won {} times and John won {} times".format(cara, coroa))
     N = int(input())
 
+"""
+Número 8-
+Funções
+"""
+N = int(input())
+for _ in range(N):
+    x, y = map(int, input().split())
+    carlos = (x * -100) + (y ** 3)
+    beto = ((x ** 2) * 2) + (y * 5)**2
+    rafael = ((3 * x)** 2) + (y ** 2)
+    if rafael > beto and rafael > carlos:
+        print("Rafael ganhou")
+    if beto > rafael and beto > carlos:
+        print("Beto ganhou")
+    if carlos > beto and carlos > rafael:
+        print("Carlos ganhou")
 
