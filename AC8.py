@@ -128,4 +128,18 @@ for _ in range(N):
 Número 7-
 
 """
-       
+"""
+Número 7-
+Cara ou cora
+"""
+N = int(input())
+
+while N != 0:
+    resultados = [int(s) for s in input().split()]
+    
+    cara = resultados.count(0)
+    coroa = resultados.count(1)
+    print("Mary won {} times and John won {} times".format(cara, coroa))
+    N = int(input())
+
+
